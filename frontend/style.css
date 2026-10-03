@@ -1,0 +1,198 @@
+
+/* General page styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 40px 20px;
+  color: #1f2937;
+}
+
+/* Main heading */
+h1 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 30px;
+}
+
+/* Form and task list */
+#taskForm,
+#taskList {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Add task form */
+#taskForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* General button styling */
+button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease,
+              transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* Add task button */
+#taskForm button {
+  background-color: #2563eb;
+}
+
+#taskForm button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Tasks heading */
+h2 {
+  max-width: 600px;
+  margin: 30px auto 16px;
+}
+
+/* Individual task card */
+.task-card {
+  background-color: white;
+  max-width: 600px;
+  margin: 0 auto 15px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  border-left: 5px solid #2563eb;
+}
+
+/* Task title */
+.task-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #111827;
+  overflow-wrap: anywhere;
+}
+
+/* Task description */
+.task-description {
+  color: #6b7280;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+/* Task status */
+.task-card .completed,
+.task-card .pending {
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.task-card .completed {
+  color: #16a34a;
+}
+
+.task-card .pending {
+  color: #f59e0b;
+}
+
+/* Task buttons */
+.task-card button {
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+/* Edit button */
+.edit-button {
+  background-color: #2563eb;
+}
+
+.edit-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Complete button */
+.complete-button,
+.save-button {
+  background-color: #16a34a;
+}
+
+.complete-button:hover,
+.save-button:hover {
+  background-color: #15803d;
+}
+
+/* Delete button */
+.delete-button {
+  background-color: #dc2626;
+}
+
+.delete-button:hover {
+  background-color: #b91c1c;
+}
+
+/* Edit form */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Cancel button */
+.cancel-button {
+  background-color: #6b7280;
+}
+
+.cancel-button:hover {
+  background-color: #4b5563;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 600px) {
+  body {
+    padding: 24px 14px;
+  }
+
+  #taskForm {
+    padding: 18px;
+  }
+
+  .task-card {
+    padding: 16px;
+  }
+
+  .task-card button {
+    margin-right: 6px;
+  }
+}
