@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "https://YOUR-RENDER-URL.onrender.com/api/tasks";
 
 const taskForm = document.getElementById("taskForm");
 const taskList = document.getElementById("taskList");
